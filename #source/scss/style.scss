@@ -1500,7 +1500,12 @@ h1 { @include txt_70_87(); font-weight: $fw-800; }
     padding-right: 40px;
     padding-top: 16px;
     padding-bottom: 40px;
-
+    width: auto;
+    margin: 0;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   width: auto;
   margin: 0 41px;
