@@ -750,6 +750,7 @@ h1 { @include txt_70_87(); font-weight: $fw-800; }
   padding: 125px 145px;
   display: flex;
 
+
   .who-we-are__col:nth-child(1) {
     flex: 0 0 40%;
   }
@@ -757,6 +758,12 @@ h1 { @include txt_70_87(); font-weight: $fw-800; }
   .who-we-are__col:nth-child(2) {
     flex: 0 0 60%;
     @include txt_18_28();
+  }
+
+  .who-we-are__mfc-info {
+    @include txt_18_28();
+    color: #62676A;
+    margin-top: 20px;
   }
 }
 
@@ -2352,6 +2359,46 @@ footer {
   column-gap: 30px;
   row-gap: 30px;
 }
+
+
+
+.persona-card {
+  background-color: #EDE0CA;
+  border-radius: 20px;
+  padding: 40px 50px;
+
+  .persona-card__inner {
+    display: flex;
+
+    .persona-card__persona-photo {
+      width: 165px;
+      height: 179px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-right: 24px;
+    }
+
+    .persona-card__col {
+      .persona-card__fullname {
+        @include txt_18_23();
+        font-weight: 700;
+        color: #2C2C2C;
+        margin-bottom: 14px;
+      }
+
+      .persona-card__status {
+        @include txt_14_18();
+        color: #2C2C2C;
+      }
+    }
+
+  }
+
+
+}
+
+
+
 
 
 

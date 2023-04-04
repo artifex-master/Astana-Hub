@@ -663,6 +663,41 @@ h1 {
     line-height: 24px;
   }
 }
+.who-we-are .who-we-are__mfc-info {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #62676A;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 1540px) {
+  .who-we-are .who-we-are__mfc-info {
+    font-family: "Mulish", sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .who-we-are .who-we-are__mfc-info {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .who-we-are .who-we-are__mfc-info {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .who-we-are .who-we-are__mfc-info {
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 
 .about-us-label {
   font-family: "Mulish", sans-serif;
@@ -3410,6 +3445,66 @@ footer .footer__inner .footer__col:last-child {
   .grid-news-feed {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.persona-card {
+  background-color: #EDE0CA;
+  border-radius: 20px;
+  padding: 40px 50px;
+}
+.persona-card .persona-card__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.persona-card .persona-card__inner .persona-card__persona-photo {
+  width: 165px;
+  height: 179px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 24px;
+}
+.persona-card .persona-card__inner .persona-card__col .persona-card__fullname {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #2C2C2C;
+  margin-bottom: 14px;
+}
+@media only screen and (max-width: 1540px) {
+  .persona-card .persona-card__inner .persona-card__col .persona-card__fullname {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .persona-card .persona-card__inner .persona-card__col .persona-card__fullname {
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .persona-card .persona-card__inner .persona-card__col .persona-card__fullname {
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.persona-card .persona-card__inner .persona-card__col .persona-card__status {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2C2C2C;
+}
+@media only screen and (max-width: 992px) {
+  .persona-card .persona-card__inner .persona-card__col .persona-card__status {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
