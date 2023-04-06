@@ -572,6 +572,15 @@ h1 { @include txt_70_87(); font-weight: $fw-800; }
 
 }
 
+.btn-download {
+  border: 1px solid #9C9FB0;
+  border-radius: 100px;
+  background-color: transparent;
+  padding: 20px 25px;
+  cursor: pointer;
+
+}
+
 
 .chevron-icon {
   @include center();
@@ -2372,9 +2381,19 @@ footer {
   padding: 40px 50px;
 
   .persona-card__inner {
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 32px;
+      flex-direction: column;
+
+    }
     display: flex;
 
     .persona-card__persona-photo {
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+      }
       width: 179px;
       height: 179px;
       border-radius: 20px;
@@ -2397,6 +2416,9 @@ footer {
       }
 
       .persona-card__row {
+        @media only screen and (max-width: 600px) {
+          flex-direction: column;
+        }
         display: flex;
         margin-bottom: 6px;
 
@@ -2427,6 +2449,96 @@ footer {
 
 
 
+// Секция Документы
+.documents {
+  .documents__outer {
+    .documents__inner {
+      padding: 100px 0;
+      .documents__title {
+        @include txt_45_65();
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 60px;
+      }
+
+
+    }
+  }
+}
+
+.documents-list {
+  @media only screen and (max-width: 1540px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media only screen and (max-width: 1120px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media only screen and (max-width: 600px) {
+    .documents-pdf-item__image {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 118px;
+        height: 162px;
+      }
+    }
+
+  }
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+
+
+}
+
+.document-pdf-item {
+  @media only screen and (max-width: 600px) {
+    padding: 32px 20px;
+
+  }
+  background-color: #20263D;
+  border-radius: 20px;
+  padding: 32px 99px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .documents-pdf-item__title {
+    @include txt_18_23();
+    font-weight: 800;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 53px;
+    text-align: center;
+    flex: 1 1 auto;
+  }
+}
+
+
+.documents-pdf-item__btn-inner {
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+
+  }
+  @include txt_16_20();
+  display: flex;
+  color: #9C9FB0;
+
+  .documents-pdf-item__arrow-down-wrapper {
+    @include center();
+    padding-top: 2px;
+  }
+}
 
 
 
