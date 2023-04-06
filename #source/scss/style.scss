@@ -752,15 +752,19 @@ h1 { @include txt_70_87(); font-weight: $fw-800; }
 
 
   .who-we-are__col:nth-child(1) {
-    flex: 0 0 40%;
+    flex: 0 0 48%;
+    margin-right: 27px;
   }
 
   .who-we-are__col:nth-child(2) {
-    flex: 0 0 60%;
+    flex: 0 0 44%;
     @include txt_18_28();
   }
 
   .who-we-are__mfc-info {
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 36px;
+    }
     @include txt_18_28();
     color: #62676A;
     margin-top: 20px;
@@ -2371,7 +2375,7 @@ footer {
     display: flex;
 
     .persona-card__persona-photo {
-      width: 165px;
+      width: 179px;
       height: 179px;
       border-radius: 20px;
       overflow: hidden;
@@ -2389,6 +2393,30 @@ footer {
       .persona-card__status {
         @include txt_14_18();
         color: #2C2C2C;
+        margin-bottom: 14px;
+      }
+
+      .persona-card__row {
+        display: flex;
+        margin-bottom: 6px;
+
+        .persona-card__label {
+          @include txt_14_18();
+          font-weight: 600;
+          color: #62676A;
+          margin-right: 25px;
+        }
+      }
+
+      .persona-card__info {
+        @include txt_14_18();
+        font-weight: 600;
+        color: #2c2c2c;
+      }
+
+      .persona-card__tel {
+        display: block;
+        padding-left: 14px;
       }
     }
 

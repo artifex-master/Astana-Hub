@@ -624,13 +624,14 @@ h1 {
 }
 .who-we-are .who-we-are__col:nth-child(1) {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  margin-right: 27px;
 }
 .who-we-are .who-we-are__col:nth-child(2) {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
+      -ms-flex: 0 0 44%;
+          flex: 0 0 44%;
   font-family: "Mulish", sans-serif;
   font-size: 18px;
   line-height: 28px;
@@ -669,6 +670,11 @@ h1 {
   line-height: 28px;
   color: #62676A;
   margin-top: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .who-we-are .who-we-are__mfc-info {
+    margin-bottom: 36px;
+  }
 }
 @media only screen and (max-width: 1540px) {
   .who-we-are .who-we-are__mfc-info {
@@ -3459,7 +3465,7 @@ footer .footer__inner .footer__col:last-child {
   display: flex;
 }
 .persona-card .persona-card__inner .persona-card__persona-photo {
-  width: 165px;
+  width: 179px;
   height: 179px;
   border-radius: 20px;
   overflow: hidden;
@@ -3499,6 +3505,7 @@ footer .footer__inner .footer__col:last-child {
   font-size: 14px;
   line-height: 18px;
   color: #2C2C2C;
+  margin-bottom: 14px;
 }
 @media only screen and (max-width: 992px) {
   .persona-card .persona-card__inner .persona-card__col .persona-card__status {
@@ -3506,6 +3513,45 @@ footer .footer__inner .footer__col:last-child {
     font-size: 16px;
     line-height: 20px;
   }
+}
+.persona-card .persona-card__inner .persona-card__col .persona-card__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6px;
+}
+.persona-card .persona-card__inner .persona-card__col .persona-card__row .persona-card__label {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #62676A;
+  margin-right: 25px;
+}
+@media only screen and (max-width: 992px) {
+  .persona-card .persona-card__inner .persona-card__col .persona-card__row .persona-card__label {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.persona-card .persona-card__inner .persona-card__col .persona-card__info {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+@media only screen and (max-width: 992px) {
+  .persona-card .persona-card__inner .persona-card__col .persona-card__info {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.persona-card .persona-card__inner .persona-card__col .persona-card__tel {
+  display: block;
+  padding-left: 14px;
 }
 
 @media only screen and (max-width: 1720px) {
