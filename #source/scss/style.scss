@@ -67,6 +67,7 @@ $fs-28: 28px;
 $fs-29: 29px;
 $fs-30: 30px;
 $fs-32: 32px;
+$fs-33: 33px;
 $fs-34: 34px;
 $fs-37: 37px;
 $fs-38: 38px;
@@ -78,6 +79,7 @@ $fs-44: 44px;
 $fs-45: 45px;
 $fs-46: 46px;
 $fs-48: 48px;
+$fs-52: 52px;
 $fs-54: 54px;
 $fs-57: 57px;
 $fs-61: 61px;
@@ -433,28 +435,28 @@ $black-2c: #2c2c2c;
 
   @media only screen and (max-width: 992px) {
     font: {
-      size: $fs-57;
+      size: $fs-52;
     }
     line-height: $lh-64;
   }
 
   @media only screen and (max-width: 600px) {
     font: {
-      size: $fs-54;
+      size: $fs-46;
     }
     line-height: $lh-60;
   }
 
   @media only screen and (max-width: 460px) {
     font: {
-      size: $fs-44;
+      size: $fs-33;
     }
-    line-height: $lh-52;
+    line-height: $lh-46;
   }
 
   @media only screen and (max-width: 360px) {
     font: {
-      size: $fs-38;
+      size: $fs-30;
     }
     line-height: $lh-46;
   }
@@ -474,6 +476,9 @@ html {
 
 h1 { @include txt_70_87(); font-weight: $fw-800; }
 
+.golden {
+  color: #E4BB26;
+}
 
 .container {
   width: 1572px;
@@ -2543,6 +2548,107 @@ footer {
 .section-white__mfca {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+// Вакансии
+.vacancies {
+  .container-lower {
+    @media only screen and (max-width: 992px) {
+      width: auto;
+      margin: 0 80px;
+    }
+    @media only screen and (max-width: 600px) {
+      width: auto;
+      margin: 0 20px;
+    }
+
+    .vacancies__outer {
+      .vacancies__inner {
+        .vacancies__title {
+          @include txt_45_65();
+          font-weight: 800;
+          color: #2C2C2C;
+          width: 100%;
+          margin-bottom: 47px;
+        }  
+  
+      }
+    }
+  }
+
+}
+
+.vacancies__main {
+  padding-bottom: 56px;
+  .vacancies__vacancies-list {
+    display: flex;
+    flex-direction: column;
+
+    .vacancies-list__vacancy {
+      margin-bottom: 35px;
+    }
+
+  }
+
+  .vacancies__btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+
+.vacancy {
+  background-color: #F2EBDF;
+  border-radius: 20px;
+  padding: 50px;
+
+  .vacancy__inner {
+    display: flex;
+    flex-direction: column;
+
+    .vacancy__row:nth-child(1) {
+      @media only screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+      display: flex;
+      margin-bottom: 22px;
+
+      .vacancy__col:nth-child(1) {
+        flex: 0 0 28%;
+        margin-right: 15px;
+
+        .vacancy__title {
+          @media only screen and (max-width: 992px) {
+            margin-bottom: 22px;
+          }
+          @include txt_25_31();
+          font-weight: 800;
+          color: #2C2C2C;
+        }
+      }
+
+      .vacancy__col:nth-child(2) {
+        flex: 0 0 68%;
+
+        .vacancy__desc {
+          @include txt_18_28();
+          font-weight: 400;
+          color: #62676A;
+        }
+      }
+    }
+
+    .vacancy__row:nth-child(2) {
+      @media only screen and (max-width: 600px) {
+        justify-content: center;
+      }
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
 
 
